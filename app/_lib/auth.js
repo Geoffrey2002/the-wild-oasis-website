@@ -7,8 +7,8 @@ const authConfig = {
     Google({
       clientId: process.env.AUTH_GOOGLE_ID,
       clientSecret: process.env.AUTH_GOOGLE_SECRET,
-      authorizationUrl: "https://accounts.google.com/o/oauth2/auth?prompt=consent&access_type=offline&response_type=code",
-  callbackUrl: "http://localhost:3000/api/auth/callback/google"
+  //     authorizationUrl: "https://accounts.google.com/o/oauth2/auth?prompt=consent&access_type=offline&response_type=code",
+  // callbackUrl: "http://localhost:3000/api/auth/callback/google"
     }),
   ],
   secret: process.env.AUTH_SECRET,
@@ -37,6 +37,7 @@ const authConfig = {
   },
   pages: {
     signIn: "/login",
+    signOut: "/logout",
   },
 };
 export const {
